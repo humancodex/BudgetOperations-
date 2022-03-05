@@ -1,0 +1,23 @@
+.trackerButton{
+    background:#111;
+    position:absolute;
+    right:10vw;
+    bottom: 10vh;
+
+    border:1px solid #111;
+    padding:20px;
+
+    text-transform: uppercase;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 3px;
+
+    span{
+        margin-right:10px;
+        
+    }
+
+}
