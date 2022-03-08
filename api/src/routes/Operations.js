@@ -8,10 +8,9 @@ const {
 
 const server = Router();
 
-
 server.get("/", getOperations);
 server.post("/create", postOperation);
-server.put('/edit/:id',editOperation)
+server.put("/edit/:id", editOperation);
 server.delete("/delete/:id", deleteOp);
 
 module.exports = server;

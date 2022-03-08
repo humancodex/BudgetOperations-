@@ -1,16 +1,4 @@
-const axios = require("axios");
-
 const { Operation } = require("../../db");
-/* 
-
-post> nueva operation 
-get > todas mis operations , filtrado por categoria 
-put >
-delete >
-
-ingreso o egreso no se pueden modificar 
-
-*/
 
 const postOperation = async (req, res, next) => {
 	try {
@@ -50,12 +38,13 @@ const editOperation = async (req, res, next) => {
 				concept: req.body.concept,
 				amount: req.body.amount,
 				date: req.body.date,
-			},{
-			where: { id: id }
-		}			
+			},
+			{
+				where: { id: id },
+			}
 		);
-		
-		res.status(200).send('update succesfully!');
+
+		res.status(200).send("update succesfully!");
 	} catch (error) {
 		next(error);
 	}
