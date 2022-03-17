@@ -1,24 +1,23 @@
 import React from "react";
 import Header from "../Header/index";
 import "../styles/home.scss";
-import AddTracker from '../addTracker/index'
+import Buttons from '../Buttons/index'
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <div className="main-container" id="main-container">
+		<>
+			<Header /> 
+			<div className="main-container" id="main-container">
+				<h1>
+					Budget <br />
+					Tracker
+				</h1>
 
-
-          <h1>Budget <br/>
-          Tracker</h1>
-
-<AddTracker/>
-
-         
-      </div>
-    </>
-  );
+				<Buttons />
+       
+			</div>
+		</>
+	);
 };
 
 export default Home;
