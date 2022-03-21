@@ -6,11 +6,11 @@ const {
 	editOperation,
 } = require("../routes/controllers/_Operations");
 
-const server = Router();
+const route = Router();
 
-server.get("/", getOperations);
-server.post("/create", postOperation);
-server.put("/edit/:id", editOperation);
-server.delete("/delete/:id", deleteOp);
+route.get("/", getOperations);
+route.post("/create", postOperation);
+route.put("/edit/:id", editOperation);
+route.delete("/delete/:id", deleteOp);
 
-module.exports = server;
+module.exports = route;

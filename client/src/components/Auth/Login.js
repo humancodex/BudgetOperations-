@@ -29,7 +29,7 @@ function Login() {
 					<Avatar style={avatarStyle}>
 						<LockIcon />
 					</Avatar>
-					<h2>SIGN IN </h2>
+					<h2>Log In </h2>
 				</Grid>
 				<TextField
 					label="Username"
@@ -60,11 +60,23 @@ function Login() {
 					Sign in{" "}
 				</Button>
 				<Typography>
-					<Link href="#">Forgot Password?</Link>
+					<Link
+						href="#"
+						onClick={() => {
+							console.info("I'm a button.");
+						}}>
+						Forgot Password?
+					</Link>
 				</Typography>
 				<Typography>
 					Do you have an account?
-					<Link href="#">Sign up</Link>
+					<Link
+						href="#"
+						onClick={() => {
+							console.info("I'm a button.");
+						}}>
+						Sign up
+					</Link>
 				</Typography>
 			</Paper>
 		</Grid>
