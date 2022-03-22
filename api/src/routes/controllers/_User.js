@@ -1,8 +1,6 @@
 const { User } = require("../../db");
 const { hash, compare } = require("bcryptjs");
-
 const { sign } = require("jsonwebtoken");
-
 const { SECRET } = require("../../constants/index");
 
 const login = async (req, res) => {
